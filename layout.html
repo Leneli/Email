@@ -1,13 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Demystifying Email Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+	
+
+<!-- DELETE -->
+
+
+
 <meta charset="utf-8">
 <style>
 	body {
 		margin:0;
 	}
-	/* здесь будут общие стили нашего письма */
-    .content {
-        background-color:#ffffff;
-        padding:30px;
-    }
+	/* здесь будут общие стили письма */
 	.newsletter {
 		margin: 0 auto;
 		max-width: 600px;
@@ -15,10 +25,32 @@
 	.wrapper {
 		width: 100%;
 		background-color:#f4f4f4;
+		color: #353f49;
+		font-family: 'Tahoma', 'Arial', sans-serif;
 		table-layout: fixed;
 		-webkit-text-size-adjust: 100%;
 		-ms-text-size-adjust: 100%;
 	}
+	.content {
+		background-color: #ffffff;
+    }
+	.header {
+		background-color: #f77b55;
+		padding: 0;
+		text-align: center;
+	}
+	.h1 {
+		color: #ff916e;
+		font-size: 22px;
+		font-weight: bold;
+	}
+	.footer {
+		background-color: #ff916e;
+		color: grey;
+		font-size: 12px;
+	}
+	
+	
 	@media only screen and (max-width: 400px) {
         /* причесываем верстку на малых мобильных экранах */
 	}
@@ -34,16 +66,82 @@
         /* здесь будут располагаться хаки для аутлука */
     </style>
 <![endif]-->
+
+
 <div align="center" class="wrapper">
     <!--[if (gte mso 9)|(IE)]>
     <table align="center" width="600" cellpadding="0" cellspacing="0" style="border-collapse:collapse;"><tr><td>
     <![endif]-->
-	<table class="newsletter" align="center" width="100%" cellpadding="30" cellspacing="0">
-    <tr>
-		<td class="content" style="width:600px !important;">
-            контент письма
-        </td>
-	</tr>
-    </table>
+	<table class="newsletter" align="center" width="100%" cellpadding="30" cellspacing="0" border="0">
+		<tr>
+			<td class="header">
+				<img src="i/1.jpg" alt="img1" border="0" width="600" height="300" />
+			</td>
+		</tr>
+		
+		<tr>
+			<td style="padding: 0;">
+				<table align="center" width="100%" cellpadding="30" cellspacing="0" border="0">
+					<tr>
+						<td class="content" width="50%">
+							<img src="i/2.jpg" alt="img2" border="0" width="300" height="188" />
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.</p>
+						</td>
+						<td class="content">
+							<img src="i/3.jpg" alt="img3" border="0" width="300" height="188" />
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.</p>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr class="content">
+			<td>
+				<table align="center" width="100%" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td>
+							<div class="h1">Lorem ipsum dolor sit amet!</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.</p>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr>
+			<td class="footer">
+				<table align="center" width="100%" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td width="75%">
+							&reg; Someone, somewhere 2013<br/>
+							Unsubscribe to this newsletter instantly
+						</td>
+						<td style="text-align: right;">
+							<a href="#" style="text-decoration: none;">
+								<img src="i/twitter.jpg" alt="twitter" width="40" height="40" border="0" />
+							</a>
+							&nbsp;&nbsp;
+							<a href="#" style="text-decoration: none;">
+								<img src="i/fb.jpg" alt="facebook" width="40" height="40" border="0" />
+							</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
     <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 </div>
+
+
+
+
+<!-- DELETE -->
+</body>
+</html>
